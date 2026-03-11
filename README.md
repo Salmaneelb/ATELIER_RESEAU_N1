@@ -54,12 +54,17 @@ Vous avez vu dans cette séquence comment créer des secrets GiHUB afin de mettr
 Vous pouvez observez les différentes couches OSI sur votre site **{site}.pythonanywhere.com/osi**  
   
 **Exercice 1 : Définissez les termes suivants (Répondre directement dans GitHub)**    
-* Un protocole,  
-* Une entité protocolaire,
-* Un service,  
-* Une primitive de service,  
-* Une Service Data Unit (SDU) par rapport à une PDU  
-* Un point d'accès à un service SAP (Service Access Point)  
+* Un protocole, est un ensemble de règles et de conventions qui définissent la manière dont deux entités de même niveau communiquent entre elles.
+* Une entité protocolaire, est un élément actif (logiciel ou matériel) situé dans une couche donnée du modèle OSI, capable d'implémenter un protocole.
+* Un service, est l'ensemble des fonctionnalités qu'une couche (N) offre à la couche supérieure (N+1).
+* Une primitive de service, est une opération élémentaire par laquelle une couche (N+1) interagit avec la couche (N) pour utiliser ou fournir un service. Il en existe quatre types standard :
+  - Request : La couche supérieure demande un service
+  - Indication : La couche inférieure signale un événement
+  - Response : La couche supérieure répond à une indication
+* Une Service Data Unit (SDU) par rapport à une PDU
+  - SDU (Service Data Unit) : Bloc de données reçu de la couche supérieure (N+1) à transmettre. C'est le contenu utile du point de vue de la couche N.
+  - PDU (Protocol Data Unit) : Bloc de données construit par la couche N = SDU + en-tête propre au protocole de la couche N. C'est ce qui est réellement transmis entre entités homologues.
+* Un point d'accès à un service SAP (Service Access Point) est un point d'accès au service, c'est-à-dire l'interface logique entre deux couches adjacentes (N) et (N+1). Il identifie de manière unique l'endroit où la couche N+1 peut accéder aux services offerts par la couche N.
 
 ---------------------------------------------------
 🗺️ Séquence 5 : Retour sur le protocole DHCP
